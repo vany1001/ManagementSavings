@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Savings</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="saving.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="add-people">
+                <div class="form-group">
+                    <label for="code">Code Number</label>
+                    <input type="number" id="code" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="card">Identity Card</label>
+                    <input type="number" id="card" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="day">Open Day</label>
+                    <input type="date" id="day" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for=""></label>
+                    <button class="btn btn-saving" id="saving" onclick="addSaving()" style="display: block;">Add</button>
+                    <button class="btn btn-saving" id="edit" onclick="editReal()" style="display: none;">Edit</button>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="idEdit">
+        <input type="hidden" id ="idPage" value=0>
+        <div class="row">
+            <div class="show-people">
+                <table class="table table-hovered">
+                    <thead>
+                        <tr>
+                            <th>Code Number</th>
+                            <th>Name</th>
+                            <th>Identity Card</th>
+                            <th>Open Day</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row paging">
+            <div id="paging-area" class="center">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="saving.js"></script>
+
+</html>

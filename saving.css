@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    max-width: 900px;
+    margin: 5px auto;
+}
+.row{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.form-group{
+    display: flex;
+    margin-bottom: 2px;
+   
+}
+.form-group>label{
+    width: 120px;
+}
+.form-control{
+    flex-grow: 1;
+    padding: 3px 0px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #333 ;
+}
+
+
+.btn{
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-saving {
+    color: white;
+    background-color: blue;
+    border-color: aquamarine;
+}
+.btn-saving:hover {
+    color: white;
+    background-color: rgb(0, 179, 255);
+    border-color: aquamarine;
+}
+.btn-warning {
+    color: black;
+    background-color: pink;
+    border-color: rgb(232, 53, 83);
+}
+.btn-warning:hover {
+    color:  black;
+    background-color: rgb(230, 18, 53);
+    border-color: rgb(147, 7, 30);
+}
+.btn-danger {
+    color: black;
+    background-color: rgb(255, 203, 192);
+    border-color: rgb(232, 53, 83);
+}
+.btn-danger:hover {
+    color: black;
+    background-color: rgb(236, 22, 72);
+    border-color: rgb(232, 53, 83);
+}
+.add-people, .show-people  {
+    background-color: rgb(252, 252, 35) ;
+    padding: 10ps 10px;
+    border-radius: 5px;
+}
+.table {
+    width: 100%;
+    padding: 3px;
+}
+.table-hovered>tbody>tr:hover{
+    background-color: rgb(234, 231, 177);
+}
+.table tr, td, th {
+    border-collapse: collapse;
+    padding: 3px;
+    border: 1px dashed #333;
+}
+.table>thead{
+    background-color: wheat;
+}
+.table>thead>tr>th{
+    padding: 5px 0px;
+}
+.text-center{
+    text-align: center;
+}
+#paging-area{
+    display: flex; 
+}
+.center {
+    margin: 10;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
+    
+  }
