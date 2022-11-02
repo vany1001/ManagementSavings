@@ -112,17 +112,34 @@ function formatCurrency(number) {
 function addSaving(){
     let code =  Number(document.querySelector('#code').value);
     if (!validation(document.querySelector('#code').value)) {
-        alert("Code is required!")
+        alert("Please enter Code Number!")
         return;
     }
     let name = document.querySelector('#name').value;
+    if (!validation(document.querySelector('#name').value)) {
+        alert("Please enter Name!")
+        return;
+    }
     let card = Number(document.querySelector('#card').value);
+    if (!validation(document.querySelector('#card').value)) {
+        alert("Please enter Identity Card!")
+        return;
+    }
     let dayArray = document.querySelector('#day').value.split('-')
     let year = dayArray[0];
     let month = dayArray[1]
     let day = dayArray[2];
+
+    if (!validation(document.querySelector('#day').value)) {
+        alert("Please enter Open Day!")
+        return;
+    }
     let amount = Number(document.querySelector('#amount').value);
     
+    if (!validation(document.querySelector('#amount').value)) {
+        alert("Please enter Amount!")
+        return;
+    }
     let newSaving = new Saving (code, name, card, day,month,year, amount)
       savings.push(newSaving);
       setData(key_data, savings);
