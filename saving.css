@@ -99,11 +99,19 @@
     display: flex; 
 }
 .center {
-    margin: 10;
-    position: absolute;
+    position: relative;
     top: 60%;
-    left: 50%;
+    left: 96%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, 50%);
     
-  }
+}
+.tbn-page{
+    padding: 5px 10px;
+}
+.tbn-page:hover{
+    background-color: aquamarine;
+}
+.active{
+    background-color: aquamarine;
+}
